@@ -1,0 +1,289 @@
+    /* src/styles.css */
+
+    /* src/styles.css */
+
+    body {
+    font-family: 'Arial', sans-serif;
+    background:black; /* Alice Blue for a very light blue background */
+    margin: 0;
+    padding: 0;
+    }
+
+    .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #d0f4de, #ffffff); /* Updated gradient background */
+    color: #333; /* Default text color adjusted for lighter background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    }
+
+    .navbar-left {
+    display: flex;
+    align-items: center;
+    }
+
+    .navbar-logo {
+    width: 60px; /* Adjust the size as needed */
+    height: 60px; /* Adjust the size as needed */
+    border-radius: 50%; /* This makes the image round */
+    object-fit: cover; /* Ensures the image covers the entire area */
+    margin-right: 15px; /* Add space between logo and search bar */
+    }
+
+    .navbar-search {
+    width: 300px; /* Increase width to make the search bar larger */
+    padding: 10px 15px; /* Increase padding for better appearance */
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Rounder corners */
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-search::placeholder {
+    color: #666;
+    }
+
+    .navbar-search:focus,
+    .navbar-search:hover {
+    border-color: #ffcc00; /* Highlight border on focus and hover */
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5); /* Yellow shadow on focus */
+    }
+
+    .navbar-right {
+    display: flex;
+    align-items: center;
+    }
+
+    .navbar-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+
+    .navbar-links li {
+    margin-left: 25px; /* More space between links */
+    }
+
+    .navbar-links a {
+    text-decoration: none;
+    color: #333; /* Adjust link color for lighter background */
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .navbar-links a:hover {
+    color: #ffcc00; /* Change color to yellow on hover */
+    transform: scale(1.1); /* Slightly enlarge the link on hover */
+    }
+
+    /* Add a subtle underline effect on hover */
+    .navbar-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffcc00; /* Change underline color to yellow */
+    transition: width 0.3s;
+    }
+
+    .navbar-links a:hover::after {
+    width: 100%;
+    }
+
+
+    /* Card Styles */
+    /* src/styles.css */
+
+    /* Card Styles */
+    .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 1rem; /* Space between cards */
+    justify-items: center; /* Center align items horizontally */
+    }
+
+    .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%; /* Full width of the grid item */
+    max-width: 250px; /* Reduce max width of each card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-img {
+    width: 100%;
+    height: 120px; /* Reduce height of the image */
+    object-fit: cover;
+    }
+
+    .card-content {
+    padding: 0.5rem; /* Reduce padding inside the card */
+    }
+
+    .card-content h3,
+    .card-content p {
+    margin: 0;
+    color: #555;
+    font-size: 0.9rem; /* Reduce font size */
+    }
+
+    /* Ensure links inside the cards don't have underlines */
+    .card-container a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+    display: block; /* Make the entire card clickable */
+    }
+
+    /* Other styles... */
+
+    /* Login Page Styles */
+    .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, rgb(240, 255, 240), rgb(255, 255, 255)); /* Background gradient */
+    }
+
+    .login-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    }
+
+    .login-card h2 {
+    margin-bottom: 1rem;
+    }
+
+    .login-card input {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    }
+
+    .login-card button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    }
+
+    .login-card button:hover {
+    background-color: #0056b3;
+    }
+
+    .role-toggle {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    }
+
+    .role-toggle button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s, color 0.3s;
+    }
+
+    .role-toggle button.active {
+    background-color: #007bff;
+    color: white;
+    }
+
+    .role-toggle button:hover {
+    background-color: #ddd;
+    }
+
+
+
+    .homepage {
+    font-size: 25px;
+    }
+
+    /* styles.css */
+    .service-calculator {
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    }
+    .calculator-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    }
+
+    .calculator-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    }
+    .next-service-date {
+    margin-top: 20px;
+    text-align: center;
+    }
+
+    /* src/styles.css */
+
+    .local-service-shop {
+    text-align: center;
+    padding: 2rem;
+    }
+
+    .location-input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin: 1rem 0;
+    width: 200px;
+    }
+
+    .local-service-shop button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin: 1rem 0;
+    }
+
+    .local-service-shop ul {
+    list-style: none;
+    padding: 0;
+    }
+
+    .local-service-shop li {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    }
+
+    .local-service-shop h4 {
+    margin: 0.5rem 0;
+    }

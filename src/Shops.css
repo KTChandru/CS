@@ -1,0 +1,48 @@
+    /* Shops.css */
+    .admin-page {
+    padding: 2rem;
+    }
+
+    .admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    }
+
+    .admin-table th,
+    .admin-table td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+    }
+
+    .admin-table th {
+    background-color: #f4f4f4;
+    }
+
+    .add-button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    }
+
+    .add-button:hover {
+    background-color: #2980b9;
+    }
+
+    .delete-button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    }
+
+    .delete-button:hover {
+    background-color: #c0392b;
+    }
