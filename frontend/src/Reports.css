@@ -1,0 +1,39 @@
+    /* Reports.css */
+    .admin-page {
+    padding: 2rem;
+    }
+
+    .report-options {
+    margin-bottom: 1rem;
+    }
+
+    .generate-button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 1rem;
+    }
+
+    .generate-button:hover {
+    background-color: #2980b9;
+    }
+
+    .admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    }
+
+    .admin-table th,
+    .admin-table td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+    }
+
+    .admin-table th {
+    background-color: #f4f4f4;
+    }
